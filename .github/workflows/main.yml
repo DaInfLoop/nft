@@ -1,0 +1,18 @@
+name: Deploy to Replit
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: DaInfLoop/Replit-Deployments@6b4f75f140d516252b2334dd61dcd6ab8df010d3
+        with:
+          replId: cdb7e6c7-516b-4a4b-b7c3-24fbc90f6805
+          token: ${{ secrets.REPLIT_TOKEN }}
+          subdomain: xela-nft
+          runCommand: python index.py
