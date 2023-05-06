@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: DaInfLoop/Replit-Deployments@af51f22cc5aa9a3fce998715e49a677f695fb6f3
+      - uses: DaInfLoop/Replit-Deployments@319ba43f7e67bb582381cee737f3fbdcf9fd26fd
         with:
           replId: cdb7e6c7-516b-4a4b-b7c3-24fbc90f6805
           token: ${{ secrets.REPLIT_TOKEN }}
